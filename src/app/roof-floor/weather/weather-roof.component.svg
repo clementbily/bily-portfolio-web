@@ -1,5 +1,5 @@
 
-    <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="h-100 w-100">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="weather-svg h-100 w-100">
       <polyline
         points="50 0 0 99  100 100 50 0"
         stroke="black"
