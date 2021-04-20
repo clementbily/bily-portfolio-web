@@ -5,11 +5,4 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './portfolio-door.component.html',
   styleUrls: ['./portfolio-door.component.scss']
 })
-export class PortfolioDoorComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class PortfolioDoorComponent {}

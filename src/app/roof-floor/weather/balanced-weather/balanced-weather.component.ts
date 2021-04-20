@@ -5,8 +5,4 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './balanced-weather.component.svg',
   styleUrls: ['./balanced-weather.component.scss'],
 })
-export class BalancedWeatherComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+export class BalancedWeatherComponent {}

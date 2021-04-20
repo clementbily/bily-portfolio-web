@@ -5,11 +5,4 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './technical-floor.component.html',
   styleUrls: ['./technical-floor.component.scss']
 })
-export class TechnicalFloorComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class TechnicalFloorComponent{}

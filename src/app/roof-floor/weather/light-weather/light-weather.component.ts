@@ -5,11 +5,4 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './light-weather.component.svg',
   styleUrls: ['./light-weather.component.scss']
 })
-export class LightWeatherComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class LightWeatherComponent {}

@@ -5,11 +5,5 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './mindset-floor.component.html',
   styleUrls: ['./mindset-floor.component.scss']
 })
-export class MindsetFloorComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class MindsetFloorComponent {
 }
