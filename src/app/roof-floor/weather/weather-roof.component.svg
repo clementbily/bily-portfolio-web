@@ -1,14 +1,24 @@
 
-    <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="weather-svg h-100 w-100">
-      <polyline
-        points="50 0 0 99  100 100 50 0"
-        stroke="black"
-        fill="black"
-        stroke-width="5"
-      />
-      <ng-container *ngIf="(weatherSiteMode$ | async ) as weatherSiteMode" [ngSwitch]="weatherSiteMode">
-        <g light-weather *ngSwitchCase="'LIGHT'"></g>
-        <g balanced-weather *ngSwitchCase="'BALANCED'"></g>
-        <g dark-weather *ngSwitchCase="'DARK'"></g>
-      </ng-container>
-    </svg>
+<svg viewBox="0 0 100 100" preserveAspectRatio="none" class="weather-svg h-100 w-100">
+  <polyline
+    points="50 0 0 99  100 100 50 0"
+    stroke="black"
+    fill="black"
+    stroke-width="5"
+    />
+  @if ((weatherSiteMode$ | async ); as weatherSiteMode) {
+    <ng-container>
+      @switch (weatherSiteMode) {
+        @case ('LIGHT') {
+          <g light-weather></g>
+        }
+        @case ('BALANCED') {
+          <g balanced-weather></g>
+        }
+        @case ('DARK') {
+          <g dark-weather></g>
+        }
+      }
+    </ng-container>
+  }
+</svg>

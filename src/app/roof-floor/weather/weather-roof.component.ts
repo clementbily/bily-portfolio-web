@@ -7,16 +7,15 @@ import { WeatherService } from './weather.service';
 @Component({
   selector: 'app-weather-roof',
   templateUrl: './weather-roof.component.svg',
-  styleUrls: ['./weather-roof.component.scss'],
+  styleUrls: ['./weather-roof.component.css'],
 })
-export class WeatherRoofComponent implements OnInit {
-  public weatherSiteMode$: Observable<string>;
+export class WeatherRoofComponent {
+  public weatherSiteMode$: Observable<string> ;
 
-  constructor(private weatherService: WeatherService) {}
-
-  ngOnInit(): void {
+  constructor(private weatherService: WeatherService) {
     this.weatherSiteMode$ = this.weatherService
       .getWeatherSiteMode()
       .pipe(map((weatherSiteMode) => SiteMode[weatherSiteMode.mode]));
   }
+
 }

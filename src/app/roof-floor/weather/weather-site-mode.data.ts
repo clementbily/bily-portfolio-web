@@ -7,3 +7,5 @@ export enum SiteMode {
 export interface WeatherSiteMode {
   mode: SiteMode;
 }
+
+export declare type SiteModeKey = keyof typeof SiteMode;

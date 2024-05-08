@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { async, TestBed } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
@@ -24,7 +24,7 @@ class MindsetFloorFakeComponent {}
 })
 class RoofFloorFakeComponent {}
 describe('AppComponent', () => {
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,

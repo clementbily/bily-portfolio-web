@@ -1,9 +1,4 @@
-import {
-  async,
-  ComponentFixture,
-
-  fakeAsync, TestBed
-} from '@angular/core/testing';
+import { ComponentFixture, fakeAsync, TestBed, waitForAsync } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { of } from 'rxjs';
 import { WeatherRoofComponent } from './weather-roof.component';
@@ -15,7 +10,7 @@ describe('WeatherRoofComponent', () => {
   let component: WeatherRoofComponent;
   let fixture: ComponentFixture<WeatherRoofComponent>;
   let weatherServiceMock: jasmine.SpyObj<WeatherService>;
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     weatherServiceMock = jasmine.createSpyObj<WeatherService>(
       'weatherService',
       ['getWeatherSiteMode']

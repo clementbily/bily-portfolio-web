@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { PortfolioRowComponent } from 'src/app/layout/portfolio-row/portfolio-row/portfolio-row.component';
 import { MindsetFloorComponent } from './mindset-floor.component';
@@ -8,7 +8,7 @@ describe('MindsetFloorComponent', () => {
   let component: MindsetFloorComponent;
   let fixture: ComponentFixture<MindsetFloorComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [MindsetFloorComponent, PortfolioRowComponent],
     }).compileComponents();
